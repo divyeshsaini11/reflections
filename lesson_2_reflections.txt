@@ -4,7 +4,7 @@ Git creates a git(hidden) file in the directory, which will be used to store met
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-Files are added to staging area from working directory to make commits to repository where all the commits resides. Staging gives you the power to commit only those files which you want to. You can also delete files from staging area after adding, if you feel you dont want to commit that file now. 
+Files are added to staging area from working directory to make commits to repository where all the commits resides. Staging gives you the power to commit only those files which you want to. You can also delete files from staging area even after adding, if you feel you dont want to commit that file now. 
 
 How can you use the staging area to make sure you have one commit per logical change?
 
@@ -13,3 +13,15 @@ You can see the difference between your staging files and the most recent commit
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 When you want to develop an experimental feature, do changes to same functions that are not needed/task. Branches can help in creating these features without disrupting the flow of our main project. If I wanted to add those features in the main branch I can merge it in future.
+
+How do the diagrams help you visualize the branch structure?
+
+Diagrams tells you the reachability of commits from branches, that is important to know, because if you do a new commit(non-linear, cannot be reached from any branch)that will be lost.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches will result in one branch that includes features of the two branch. We represent them in diagram so that we can find the commits from where the two branch origins and can make changes(if neccessary) accordingly.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Automatic merging is very fast, simple way of merging two branches where else manual merging will take a lot of time if two branches are long and there are lots of commits. There can be many bugs in manual merging if merger is not attentive enough. 
