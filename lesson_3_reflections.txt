@@ -4,6 +4,7 @@ There can be many reasons like you want to share your work with other people, ma
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
+--
 
 
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
@@ -16,4 +17,10 @@ What is the benefit of having a copy of the last known state of the remote store
 
 last known state of the remote will help to merge the remote and local repository, if your origin/master and master branch has diverged. It is same as merging two branches where to resolve conflicts we used the same commit where both branches origin. 
 
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 
+Without using git or github we have to explicitly send changed files to other collaborators so that they can see the change themselves and update their project files if all wanted to commit the change in the project. It is very difficult tasks because very on is working on different parts of projects and they again and again ahve to make chages to their projects for merging changes. This can also cause too many bugs. Where else its very easy to collaborate usign git or github.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+We get feedback of others when we use pull requests(need seperate branch) so that your changes are accurate, there is no mistakes/typos or conflicts between other pull requests. If all make changes direcly to master, it will go out of hand very quickly, nobody will be able to know what changes does other collaborators made or should we include those changes in our remote branch.
